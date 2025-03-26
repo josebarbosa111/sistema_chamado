@@ -13,7 +13,39 @@ body{
 form{
    display: flex;
    flex-direction: column;
+   justify-content: center;
    gap: 10px;
+   width: 828px;
+   height: 793px;
+   background-color: #DDBFBF;
+   padding: 30px;
+   
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+input{
+    width: 100%;
+    height: 60px;
+    background-color: #FEFEFE;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 15px;
+}
+button{
+    background-color: #F02727;
+    width: 267px;
+    height: 60px;
+    font-size: 32px;
+    color: #FFFFFF;
+    border-radius: 80px;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
 
