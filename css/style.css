@@ -17,8 +17,9 @@ form{
    gap: 10px;
    width: 828px;
    height: 793px;
-   background-color: #DDBFBF;
+   background-color: #eedcdc;
    padding: 30px;
+   border-radius: 20px;
    
 }
 label{
@@ -45,7 +46,14 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
     margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
 }
 
 
