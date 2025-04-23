@@ -14,7 +14,7 @@ form{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 10px;
+   gap: 15px;
    width: 828px;
    height: 793px;
    background-color: #eedcdc;
@@ -41,13 +41,12 @@ button{
     font-size: 32px;
     color: #FFFFFF;
     border-radius: 80px;
-}
+   }
 .botao{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 30px;
 }
 
 a{
