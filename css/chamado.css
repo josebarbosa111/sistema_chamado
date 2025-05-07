@@ -4,8 +4,14 @@
     margin: 0;
 }
 
+/* CORPO */
 body{
     background-color: rgba(252, 242, 242, 1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 /* NAVBAR */
@@ -32,5 +38,6 @@ body{
 }
 
 .container {
-    margin-top: 90px;
+    margin-top: 50px;
 }
+

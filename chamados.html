@@ -45,8 +45,46 @@
     </nav>
 
     <div class="container">
+        <!-- TITULO -->
         <h1>Novo Chamado</h1>
-        <hr>    
+        <hr>
+
+        <!-- FORM ABERTURA DE CHAMADO -->
+        <form action="" method="post">
+            <!-- CAIXAS DE TEXTO -->
+            <label for="cliente">Cliente</label>
+            <input type="text" name="cliente" id="cliente">
+
+            <label for="categoria">Categoria</label>
+            <input type="text" name="categoria" id="categoria">
+
+            <label for="status">Status</label>
+            <!-- DIV PARA ALINHAMENTO DOS INPUTS RADIO -->
+            <div>
+                <input type="radio" name="aberto" id="aberto">
+                <label for="aberto">Aberto</label>
+
+                <input type="radio" name="atendimento" id="atendimento">
+                <label for="atendimento">Em atendimento</label>
+
+                <input type="radio" name="fechado" id="fechado">
+                <label for="fechado">Fechado</label>
+            </div>
+
+             <!-- CAIXAS DE TEXTO -->
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto" id="assunto">
+
+             <!-- CAIXA DE TEXTO MAIOR -->
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+
+             <!-- DIV PARA ALINHAMENTO DOS BOTÕES -->
+            <div>
+                <button type="submit">Salvar</button>
+                <button onclick="window.location.href='#'">Voltar</button>
+            </div>
+        </form>
     </div>
 
     <!-- LINK JAVASCRIPT BOOTSTRAP -->
