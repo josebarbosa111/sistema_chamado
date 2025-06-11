@@ -12,11 +12,11 @@ $senha = $_POST['senha'];
 
 $sql = "INSERT INTO `tb_user` VALUES (NULL, '$nome', '$email', '$setor', '$senha');";
 
-if ($conn->query($sql) === TRUE) {
+if ($conexao->query($sql) === TRUE) {
   echo "<script>alert('Usuario cadastrado com sucesso'); history.back() </script>";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error: " . $sql . "<br>" . $conexao->error;
 }
 
-$conn->close();
+$conexao->close();
 ?>
