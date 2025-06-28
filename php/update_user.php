@@ -13,6 +13,23 @@ $query = $conexao->query($select);
 
 // ARMAZENA A 1ª LINHA DO BD DENTRO DA VARIAVEL RESULTADO 
 $resultado = $query->fetch_assoc();
+
+// VERIFICA SE O FORMULÁRIO FOI ENVIADO
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $setor = $_POST['setor'];
+
+    // INSTRUÇÃO SQL PARA FAZER O UPDATE
+    $update = "UPDATE tb_user SET nm_user = '$nome', email = '$email', setor = '$setor' WHERE id_user = '$id'";
+
+    // EXECUTA O UPDATE
+    if ($conexao->query($update) === TRUE) {
+        echo "<script>alert('Usuário atualizado com sucesso!'); window.location.href='listar_usuario.php';</script>";
+    } else {
+        echo "Erro ao atualizar: " . $conexao->error;
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +59,7 @@ $resultado = $query->fetch_assoc();
 
             <div class="botao">
                 <button type="submit">Editar</button>
-                <a href="">Voltar</a>
+                <a href="listar_usuario.php">Voltar</a>
             </div>
         </form>
     </div>
@@ -50,3 +67,4 @@ $resultado = $query->fetch_assoc();
 </body>
 
 </html>
+
